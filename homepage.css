@@ -1,0 +1,114 @@
+body{
+    text-align: center;
+    width:100%;
+}
+
+a:link{
+    color:black;
+    text-decoration:none;
+}
+.navigation ul {           /* 導覽列整體設定*/
+    margin: 0;             /* 取消外距，設定為0*/
+    padding: 4px;          /* 內部距離，設定為4px*/
+    text-align: center;    /* 文字置中*/
+    color:black; 
+    font-weight:bold;  
+    font-size:21px;
+    }
+.navigation ul li {        /* 按鈕個別設定*/
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    margin: 23px;         /* 外距設定為0.5px*/
+}
+.navigation ul li a:hover {       /* 超連結滑鼠滑過設定*/
+    color: #df2e2e;             /* 文字顏色設定*/   
+    text-decoration: underline      
+}
+
+span{
+    margin-right:110px;
+    
+}
+
+.search {
+    position: relative;
+    width: 95%;
+    float: left;
+    text-align:right;
+  }
+  .search-bar {
+    width: 380px;
+    height: 30px;
+    font-size: 15px;
+    padding:3px;
+  }
+  .search-btn {
+    width: 36px;
+    height: 38px;
+    background-color: #a5a09e;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+  
+  }
+
+.first{
+    text-align:left;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.title{
+    font-weight:bold;
+    font-size:30px;
+    text-align:left;
+}
+.key{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.keyword{
+    font-size:13px;
+    text-align: left;
+    margin-top:20px;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+.text{
+    font-size:13px;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+.content{
+    font-size:20px;
+    text-align: left;
+    width:1100px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    margin-top:60px;
+}
+
+.right{
+    font-weight:bold;
+    font-size:23px;
+    text-align:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+.point{
+    width:300px;
+}
+.list{
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.last{
+    font-size:18px;
+    text-align:left;
+
+
+}
+
