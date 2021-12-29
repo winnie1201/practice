@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <title>week1-RWD</title>
+    <style>
+        body{
+            margin:0px;
+            font-size: 20px; 
+           
+        }
+        .header{
+            display:flex;
+            justify-content: center;   
+        }
+        .item{
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .item1{
+            width:100%;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        .item>span{
+            margin-right: 15px;
+        }
+        .btn{
+          display: none;
+          margin-top:5px;
+        }
+        .title{
+            
+            display: flex;
+            height:300px;
+            background-color: rgb(243, 197, 204);
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .box{
+            width:100%;
+        }
+        .imgbox{
+            width:1200px;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;    
+        }
+        .pic { 
+            width:20%;
+            text-align: center;
+            margin-right: 30px;  
+        }
+        .pic img{
+            width:100%;
+        }
+        .pic p{
+            margin-top: -5px;
+            text-align: center;
+            width:100%;
+            background-color: rgb(180, 170, 170);
+        }
+     @media screen and (min-width:600px) and (max-width:1201px){
+        .imgbox{
+            width:90%;
+        }
+        .pic { 
+            width:40%;
+         }
+    }
+     @media screen and (max-width:601px){
+        .imgbox{
+            width:90%;
+        } 
+        .pic{
+             width:60%;
+         }
+         .btn{
+          display: block;
+          margin-top:5px;
+        }
+        .item>span{
+            display:none;
+        }
+     }  
+    </style>
+    <script>
+        function click(index){
+        let button=document.getElementByID("button");
+        let list=document.getElementById("list");
+        if (click==0){
+            list.className="item1";
+        
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div>mywebsite</div>
+        <div class="item" id="list">
+            <div class="btn" id="button" onclick="click(0);"><img src="btn.png"  width="30px;"></div>
+            <span>Item1</span>
+            <span>Item2</span>
+            <span>Item3</span>
+            <span>Item4</span>
+        </div>
+    </div>
+    <div class="title">welcome to myhome</div>
+    <div class="box">
+        <div class="imgbox">
+            <div class="pic">
+                <img src="甜點1.jpg" >
+                <p>Item1</p>
+            </div>
+            <div class="pic">
+                <img src="甜點2.jpg">
+                <p>Item2</p>
+                </div>
+            <div class="pic">
+                <img src="甜點3.jpg">
+                <p>Item3</p>
+                </div>
+            <div class="pic">
+                <img src="甜點4.jpg">
+                <p>Item4</p>
+                </div>
+            <div class="pic">
+                <img src="甜點5.jpg">
+                <p>Item5</p>
+                </div>
+            <div class="pic">
+                <img src="甜點6.jpg">
+                <p>Item6</p>
+                </div>
+            <div class="pic">
+                <img src="甜點7.jpg">
+                <p>Item7</p>
+                </div>
+            <div class="pic"> 
+                <img src="甜點8.jpg">
+                <p>Item8</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
